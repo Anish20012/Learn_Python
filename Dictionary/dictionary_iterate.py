@@ -16,7 +16,7 @@ print(trip1["drop"][1])
 for location in trip1["drop"]:
     print("Drop location option :", location)
 
-trips = [{"Trip id" : " UB12345",
+trips = [{"Trip id" : " UB12345", #disctionary inside a list
     "pickup" : "Kondapur",
     "drop" : ["Airport","Hafeezpet","Hitech city"],
     "fare" : 450,
@@ -34,3 +34,22 @@ trips = [{"Trip id" : " UB12345",
 
 for trip in trips:
     print(trip["Trip id"])
+
+#dictionary inside a dictionary
+trips = {"UB12345":{"Trip id" : " UB12345", 
+    "pickup" : "Kondapur",
+    "drop" : ["Airport","Hafeezpet","Hitech city"],
+    "fare" : 450,
+    "driver" : "Ravi",
+    "status" : "Arriving",
+    },
+    "UB54321":{"Trip id" : " UB54321",
+    "pickup" : "Madhapur",
+    "drop" : ["Gachibowli","Miyapur","JNTU"],
+    "fare" : 550,
+    "driver" : "Suresh",
+    "status" : "On Trip",
+    }
+}
+
+print("UB12345 fare : ", trips["UB12345"]["fare"])

@@ -30,7 +30,7 @@ class stranger:
         print(p._protected_var) 
        
         try:
-             print(p._parent__private_var)   #name Mangling to access private variable from outside the class
+             print(p._parent__private_var)   #name Mangling to access private variable from outside the class 
         except AttributeError:
             print("Private variable is not accessible from outside the class")
 
